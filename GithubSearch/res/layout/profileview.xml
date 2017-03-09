@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <LinearLayout
+    android:id="@+id/yourlayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    
+         <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layoutAnimation="@animator/animlist">
+    
+        <com.android.volley.toolbox.NetworkImageView
+        android:id="@+id/thumbnail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_gravity="center_horizontal"/>
+        </LinearLayout>
+        
+         <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layoutAnimation="@animator/animlist1">
+        
+        <TextView 
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:paddingTop="10dp"
+        android:layout_gravity="center_horizontal"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:textColor="@android:color/black"/>
+        
+        <TextView 
+        android:id="@+id/profileurl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:clickable="true"
+        android:paddingTop="5dp"
+        android:layout_gravity="center_horizontal"/>
+        
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:paddingTop="56dp" >
+        
+         <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Share profile"
+            android:textColor="#ffffff"
+            tools:ignore="HardcodedText"
+            android:textStyle="bold"
+            android:background="#0291dd" 
+            android:id="@+id/share"
+            android:clickable="true"/>
+         </LinearLayout>
+    
+    
+    
+
+</LinearLayout>
+</LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:orientation="vertical">
+    
+     <android.support.v7.widget.Toolbar 
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="5dp"
+    android:background="#0f2b53"
+    android:layout_gravity="top"
+    android:minWidth="?attr/actionBarSize"
+    android:theme="@style/Theme.AppCompat"
+    app:titleTextColor="#ffff"
+    app:title="Java Developers in Lagos"
+    style="@style/Base.Widget.Design.TabLayout"
+    app:layout_scrollFlags="scroll|enterAlways">  
+</android.support.v7.widget.Toolbar>
+    
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:id="@+id/yourlayout"
+    android:layout_height="match_parent"
+    android:paddingTop="5dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp" >
+    
+ <ListView
+        android:id="@+id/listView"
+        android:layoutAnimation="@animator/animlist1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </ListView>
+
+</RelativeLayout>
+    </LinearLayout>
+    
+
+
+
+
